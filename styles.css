@@ -1,0 +1,269 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eff280c3-56fd-47e3-866d-df913013b748/dgkkjef-7a0fc9ee-2c8a-4180-bfd6-8b07ab44d7fe.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VmZjI4MGMzLTU2ZmQtNDdlMy04NjZkLWRmOTEzMDEzYjc0OFwvZGdra2plZi03YTBmYzllZS0yYzhhLTQxODAtYmZkNi04YjA3YWI0NGQ3ZmUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gTe4E-jIOcAjIfqxnbfzNxmoT3Yml4-ewQ-CCRX3sPM');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    background-blend-mode: overlay;
+}
+
+
+/* Navigation styling */
+nav {
+    background: #0288d1;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem; /* Adjusted for balance */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffca28;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Reduced spacing between elements */
+}
+
+.search-dropdown {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 150px; /* Adjusted for better fit */
+    background: white;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-dropdown:hover {
+    background: #f5f5f5;
+}
+
+nav button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #ffca28;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+nav button:hover {
+    background: #ffb300;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=1470') no-repeat center/cover;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Contact form styling */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #0288d1;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #0277bd;
+}
+
+/* Team section styling */
+/* Team section styling */
+.team {
+    max-width: 900px;
+    margin: 2rem auto;
+    text-align: center;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack divs vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Make sure it takes up the full viewport height */
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #e2e2e2;
+}
+
+.team-member {
+    width: 80%; /* Adjust width for better centering */
+    margin: 1rem 0; /* Space between team members */
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member h3 {
+    color: #0288d1;
+    margin-bottom: 0.5rem;
+}
+
+/* City card styling */
+#recommendation-results {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.city-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.city-card:hover {
+    transform: scale(1.05);
+}
+
+.city-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.city-card h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #0288d1;
+}
+
+.city-card p {
+    padding: 0 1rem 1rem;
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    background: #0288d1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links, .search-container {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    nav a {
+        margin-right: 0.5rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .search-dropdown, nav button {
+        width: 100%;
+        margin: 0;
+    }
+
+    .team-member {
+        width: 80%;
+    }
+}
