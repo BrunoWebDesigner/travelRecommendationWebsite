@@ -24,7 +24,7 @@ Travel Recommendations is a web application that provides curated travel suggest
 │── travel_recommendation_api.json # Data source
 │── about.html
 │── contact.html
-│── tra
+│── images
 
 ## Installation & Setup
 1. Clone the repository:
